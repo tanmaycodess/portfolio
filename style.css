@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+background-color: #f3f3f3;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#intro {
+    background: url(bg-2.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #f4f4f4;
+    color: #fff;
+    overflow-y: auto;
+}
+
+
+@media (min-width: 1200px) {
+    #intro {
+        background: url(bg-1.png) center/cover no-repeat;
+    }
+}
+
+@media (min-width: 1200px) {
+    #intro  {
+        height: 90vh;
+    }
+}
+
+#intro h1 {
+    text-align: center;
+    font-size:  5rem;
+    margin-bottom: 20px;
+    color:#0000008b;
+    
+}
+
+@media (min-width: 1200px) {
+    #intro h1 {
+        font-size: 6.5em;
+        color: #333;
+        
+    }
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Portfolio Section */
+#portfolio {
+    /* background-image: url(bg-1.png) center/cover no-repeat; */
+    background-color: #f1f1f1;
+    color: #333;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#portfolio h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#portfolio p{
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 7px;
+}
+
+.portfolio-item {
+    margin-bottom: 60px;
+
+}
+
+.portfolio-item img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+    .portfolio-item img {
+        width: 20%;
+        height: auto;
+    }
+}
+
+.portfolio-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.portfolio-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #666;
+}
+
+.portfolio-item ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.myph img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.portfolio-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* footer section*/
+
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 30px;
+}
+
+footer h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #f4f4f4;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.social-icons a:hover {
+    color: #1da1f2;
+    /* font-size: 30px; */
+}
+
+.social-icons .fa-instagram:hover{
+    color: #bc2a8d;
+    /* font-size: 30px; */
+}
+
+
+.fixed-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 80px;
+}
+
+.fixed-button:hover {
+    background-color: #745742;
+}
+
+.empty{
+    
+    height: 100vh;
+}
+
+.contact-form-container {
+    /* background-color: #333; */
+    background-image: url(bg-2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.contact-form {
+   text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #1f1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); */
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #f3f3f3;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    width: 50%;
+    padding: 12px;
+    background-color: #00d724;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}

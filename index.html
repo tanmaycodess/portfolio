@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/495f7798a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <div class="heading">
+            <h1 class="Name">Tanmay Seth</h1>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h3>My Projects</h3>
+        <p style="margin-bottom: 70px;">Author's Note: Click on the project images to experience live projects.</p>
+        <div class="portfolio-item">
+            <a href="https://pictifyfinal.vercel.app/">
+                <img src="logo8.png" alt="Project Image">
+            </a>
+            <h3>Pictify</h3>
+            <p>“Pictify” is a revolutionary social media platform designed specifically for photographers...</p>
+            <p>Through meticulous development and leveraging Full Stack technologies...</p>
+            <p>By integrating portfolio management features and live showcases...</p>
+        </div>
+
+        <div class="portfolio-item">
+            <a href="https://insansa.com/">
+                <img src="logo1.png" alt="Project Image">
+            </a>
+            <h3>insansa.com</h3>
+            <p>I had the pleasure of developing a professional website for INSANSA Technologies...</p>
+            <p>The website reflects the company's dynamic and agile approach...</p>
+            <p>Creating a responsive design that works seamlessly across devices...</p>
+        </div>
+
+        <h3>My Mini Projects</h3>
+
+        <div class="portfolio-item">
+            <a href="https://iridescent-sfogliatella-6170cc.netlify.app/">
+                <img src="logo2.png" alt="Project Image">
+            </a>
+            <h3>Retro Guessing Game</h3>
+            <p>Step back in time with our Retro Number Guessing Game!...</p>
+            <p>In this game, players are transported to a nostalgic world...</p>
+            <p>Featuring a vibrant retro-themed interface...</p>
+            <p>So, put on your virtual joystick and get ready...</p>
+        </div>
+
+        <div class="portfolio-item">
+            <a href="https://inhibit.netlify.app/">
+                <img src="logo3.png" alt="Project Image">
+            </a>
+            <h3>Inhibit</h3>
+            <p>Dive into the world of competitive dice rolling with Inhibit...</p>
+            <p>The objective of Inhibit is simple: be the first player to reach 50 points...</p>
+            <p>With its intuitive gameplay and addictive mechanics...</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form-container">
+        <form class="contact-form" id="contact-form">
+            <h2>Contact me</h2>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="contactnumber">Contact Number:</label>
+                <input type="tel" id="contactnumber" name="contactnumber" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="requirement">Requirement:</label>
+                <input type="text" id="requirement" name="requirement" required>
+            </div>
+            <button type="submit" class="submit">Request CallBack</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <h3>Follow Me</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
