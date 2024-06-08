@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        const body = `Name: ${nameInput.value}<br>Message: ${messageInput.value}<br>Requirement: ${requirementInput.value}<br>Phone: ${Phone.value}`;
+        const body = `Name: ${nameInput.value}<br>Message: ${messageInput.value}<br>Requirement: ${requirementInput.value}<br>Phone: ${Phone.value}<br> Email: ${emailInput.value}`;
 
         Email.send({
             Host: "smtp.elasticemail.com",
             Username: "sethtanmay72@gmail.com",
             Password: "CD1B3A68A12344DD0AA63EB915E136401589",
             To: toAddress,
-            From: fromAddress,
+            From: toAddress,
             Subject: "Contact Form Submission",
             Body: body
         }).then(
